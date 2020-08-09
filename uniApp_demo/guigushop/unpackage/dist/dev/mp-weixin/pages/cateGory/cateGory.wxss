@@ -1,0 +1,89 @@
+#cateGoryContainer .searchHeader {
+  padding: 10rpx 0;
+}
+#cateGoryContainer .searchHeader .search {
+  width: 90%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin: 0 auto;
+  background: #ededed;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+}
+#cateGoryContainer .contentContainer {
+  height: calc(100vh - 80rpx);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+/* border-box 怪异盒模型： 计算宽高的时候： content + padding + border  标准盒模型: content-box*/
+  box-sizing: border-box;
+  border-top: 1rpx solid #eee ;
+}
+#cateGoryContainer .contentContainer .leftContainer {
+  width: 20%;
+  border-right: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+#cateGoryContainer .contentContainer .leftContainer .navList {
+  height: calc(100vh - 80rpx);
+}
+#cateGoryContainer .contentContainer .leftContainer .navList .navItem {
+  position: relative;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+#cateGoryContainer .contentContainer .leftContainer .navList .navItem.activeClass:after {
+  position: absolute;
+  top: 10rpx;
+  left: 5rpx;
+  content: '';
+  height: 60rpx;
+  width: 2rpx;
+  background: #bb2c08;
+}
+#cateGoryContainer .contentContainer .rightContainer {
+  width: 80%;
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll {
+  height: calc(100vh - 80rpx);
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll .contentList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll .contentList .contentImg {
+  width: 520rpx;
+  height: 190rpx;
+  margin: 20rpx auto;
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll .contentList .listItem {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll .contentList .listItem image {
+  width: 90%;
+  height: 142rpx;
+}
+#cateGoryContainer .contentContainer .rightContainer .rightScroll .contentList .listItem text {
+  font-size: 24rpx;
+  text-align: center;
+}
+.test {
+  font-size: 0;
+}
+
